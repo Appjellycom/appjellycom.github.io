@@ -8,7 +8,7 @@
 <title>Appjellycom Games</title>
 <style>
   body { font-family: 'Segoe UI', sans-serif; background: #0e2f45; color: #eef6fc; margin: 0; padding: 0; }
-  nav { display: flex; justify-content: center; gap: 25px; padding: 18px 0; background: #16405c; position: sticky; top: 0; }
+  nav { display: flex; justify-content: center; gap: 25px; padding: 18px 0; background: #16405c; position: sticky; top: 0; z-index: 10; }
   nav a { color: #b7d3e6; text-decoration: none; font-weight: 600; }
   nav a:hover { color: #ffb84d; }
   header { text-align: center; padding: 50px 20px 20px; }
@@ -21,7 +21,8 @@
   h2.section-title { color: #ffb84d; }
   p, li { color: #d6e6f0; line-height: 1.6; }
   footer { text-align: center; padding: 30px 20px; color: #7fa0b8; font-size: 0.9em; border-top: 1px solid #1c4a66; }
-  a.email { color: #ffb84d; }
+  .ad-space { max-width: 600px; margin: 20px auto; padding: 30px; text-align: center; color: #4a6c82; border: 1px dashed #2f4f66; border-radius: 10px; font-size: 0.85em; }
+  .email-icon { display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: #2f8fb0; border-radius: 50%; text-decoration: none; font-size: 1.4em; }
 </style>
 </head>
 <body>
@@ -47,6 +48,8 @@
   <p>More games coming soon.</p>
 </section>
 
+<div class="ad-space">Ad space (activates after AdSense approval)</div>
+
 <section id="about">
   <h2 class="section-title">About Us</h2>
   <p>Appjellycom is an independent game studio building simple, fun browser games for players everywhere. Our goal is to create quick, enjoyable games that anyone can play instantly in their browser, no downloads or installs required.</p>
@@ -62,10 +65,12 @@
   <p><strong>Changes:</strong> We may update this policy from time to time. Changes will be posted here.</p>
 </section>
 
+<div class="ad-space">Ad space (activates after AdSense approval)</div>
+
 <section id="contact">
   <h2 class="section-title">Contact Us</h2>
   <p>Have questions, feedback, or found a bug? Reach out anytime:</p>
-  <p><a class="email" href="mailto:yohanamgmt@gmail.com">yohanamgmt@gmail.com</a></p>
+  <a class="email-icon" href="mailto:yohanamgmt@gmail.com" title="Email us">✉️</a>
 </section>
 
 <footer>
